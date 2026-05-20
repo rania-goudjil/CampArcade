@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMP ARCADE - Arcade Mode</title>
+    <meta http-equiv="refresh" content="0; url=index.html#arcade" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="Files/Design sans titre (1).svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <main class="content-section">
+      <section class="pixel-panel dashboard-card">
+        <h1>Arcade Mode</h1>
+        <p>Forwarding to Arcade Mode...</p>
+        <a class="pixel-button pixel-button--yellow" href="index.html#arcade">Enter Arcade</a>
+      </section>
+    </main>
+
+    <script>
+      const target = new URL("index.html", window.location.href);
+      const current = new URL(window.location.href);
+      const win = current.searchParams.get("win");
+      if (win) {
+        target.searchParams.set("win", win);
+      }
+      target.hash = "arcade";
+      window.location.replace(target.toString());
+    </script>
+  </body>
+</html>

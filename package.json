@@ -1,0 +1,14 @@
+{
+  "name": "camp-arcade-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "dev": "node scripts/local-server.js",
+    "generate:qr": "node scripts/generate-winning-qrs.js",
+    "test": "node scripts/test-arcade-system.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
